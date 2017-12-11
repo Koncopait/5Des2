@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.user.a5des.MainActivity">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_tinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColorHint="@color/text_color">
+
+        <EditText
+            android:id="@+id/et_tinggi"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/linearLayout5"
+            android:layout_alignLeft="@+id/luas"
+            android:layout_alignRight="@+id/linearLayout5"
+            android:layout_alignStart="@+id/luas"
+            android:layout_below="@+id/linearLayout5"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:hint="Nama Karyawan"
+            android:inputType="text"
+            android:textColor="#094c53"
+            android:textColorHint="@color/text_color" />
+    </android.support.design.widget.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="132dp"
+        app:layout_constraintTop_toBottomOf="@+id/input_layout_tinggi"
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/satusetengahpersen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Golongan 1" />
+
+        <RadioButton
+            android:id="@+id/duapersen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Golongan 2"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="45dp" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginTop="60dp"
+        android:text="Menikah"
+        app:layout_constraintTop_toBottomOf="@+id/input_layout_tinggi"
+        tools:layout_editor_absoluteX="66dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Status"
+        app:layout_constraintTop_toBottomOf="@+id/input_layout_tinggi"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="Golongan"
+        app:layout_constraintTop_toBottomOf="@+id/input_layout_tinggi"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/hitung"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="Hitung Gaji"
+        app:layout_constraintTop_toBottomOf="@+id/input_layout_tinggi"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="37dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="276dp"
+        android:text="Besar Gaji :"
+        app:layout_constraintTop_toBottomOf="@+id/input_layout_tinggi"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/gaji"
+        android:layout_width="314dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="64dp"
+        android:text="Gajimu"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="66dp" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="314dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:text="Nama"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="66dp" />
+</android.support.constraint.ConstraintLayout>
